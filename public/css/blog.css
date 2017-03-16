@@ -2,3 +2,11 @@ body{
     margin:0;
     padding:0;
 }
+.header_tips{
+    position: relative;
+    top:-1px;
+    margin-left: 5px;
+}
+.language{
+    margin-top:8px;
+}
