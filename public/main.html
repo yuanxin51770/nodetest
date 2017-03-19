@@ -8,6 +8,8 @@
     <link rel="stylesheet" href='./css/style.css'>
     <script src="./js/jquery-3.1.1.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/utils.js"></script>
+    <script src="./js/main.js"></script>
 </head>
 <body>
 <div class="container">
@@ -119,49 +121,11 @@
                             <span class="glyphicon glyphicon-pencil"></span>
                         </div>
                         <div class="chatdiv">
-                            <textarea class="form-control noneborder" placeholder="记录生活的点滴..."></textarea>
+                            <textarea class="form-control noneborder" id="blogsend_text" placeholder="记录生活的点滴..."></textarea>
                         </div>
                     </div>
-                    <div class="blogmain">
-                        <div class="personblogdiv">
-                            <div class="main_photodiv">
-                                <img src="images/headImgs/yx.jpg" class="img-circle perimg">
-                            </div>
-                            <div class="mian_chatdiv">
-                                <h6>姓名</h6>
-                                <h6>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</h6>
-                                <a class="glyphicon glyphicon-envelope"></a><span class="header_tips">信息</span>
-                                <a class="glyphicon glyphicon-envelope"></a><span class="header_tips">信息</span>
-                                <a class="glyphicon glyphicon-envelope"></a><span class="header_tips">信息</span>
-                                <a class="glyphicon glyphicon-envelope"></a><span class="header_tips">信息</span>
-                            </div>
-                        </div>
-                        <div class="personblogdiv">
-                            <div class="main_photodiv">
-                                <img src="images/headImgs/yx.jpg" class="img-circle perimg">
-                            </div>
-                            <div class="mian_chatdiv">
-                                <h6>姓名</h6>
-                                <h6>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</h6>
-                                <a class="glyphicon glyphicon-envelope"></a><span class="header_tips">信息</span>
-                                <a class="glyphicon glyphicon-envelope"></a><span class="header_tips">信息</span>
-                                <a class="glyphicon glyphicon-envelope"></a><span class="header_tips">信息</span>
-                                <a class="glyphicon glyphicon-envelope"></a><span class="header_tips">信息</span>
-                            </div>
-                        </div>
-                        <div class="personblogdiv">
-                            <div class="main_photodiv">
-                                <img src="images/headImgs/yx.jpg" class="img-circle perimg">
-                            </div>
-                            <div class="mian_chatdiv">
-                                <h6>姓名</h6>
-                                <h6>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</h6>
-                                <a class="glyphicon glyphicon-envelope"></a><span class="header_tips">信息</span>
-                                <a class="glyphicon glyphicon-envelope"></a><span class="header_tips">信息</span>
-                                <a class="glyphicon glyphicon-envelope"></a><span class="header_tips">信息</span>
-                                <a class="glyphicon glyphicon-envelope"></a><span class="header_tips">信息</span>
-                            </div>
-                        </div>
+                    <div class="blogmain" id="blogmain">
+
                     </div>
                 </div>
             </div>

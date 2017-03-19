@@ -7,18 +7,16 @@ $(function(){
             async:true,    //或false,是否异步
             data:{
                 "username":$('#register_name').val(),
-                "r_password":$('#register_psd').val(),
-                "password":$('#re_register_psd').val()
+                "password":$('#register_psd').val(),
+                "r_password":$('#re_register_psd').val(),
+                "nickname":$('#register_nickname').val()
             },
             timeout:5000,    //超时时间
             dataType:'json',    //返回的数据格式：json/xml/html/script/jsonp/text
             success:function(data,textStatus,jqXHR){
+                alert(data.message);
                 if(data.statusCode == '200'){
-                    alert(data.message);
-                    //$('#registerModal').hide();
-                }
-                else{
-                    alert(data.message);
+                    $('#registerModal').modal('hide');
                 }
             }
         })
@@ -36,7 +34,12 @@ $(function(){
             timeout:5000,    //超时时间
             dataType:'json',    //返回的数据格式：json/xml/html/script/jsonp/text
             success:function(data,textStatus,jqXHR){
-                alert(data.message);
+                if(data.statusCode == '200'){
+                    window.location.href = 'main.html';
+                }
+                else{
+                    alert(data.message);
+                }
             }
         })
     });
