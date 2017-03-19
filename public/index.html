@@ -33,7 +33,7 @@
                      </div>
                  </div>
                  <div class="col-xs-3">
-                     <div class="btn-group language">
+                     <div class="btn-group margin_center">
                          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">中文
                              <span class="caret"></span>
                          </button>
@@ -46,6 +46,7 @@
                              </li>
                          </ul>
                      </div>
+                     <button type="button" class="btn btn-default margin_center" data-toggle="modal" data-target="#registerModal">注册</button>
                  </div>
              </div>
              <div>
@@ -53,6 +54,69 @@
              </div>
          </div>
      </nav>
+     <!-- 模态框（Modal） -->
+     <div class="modal fade" id="registerModal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+         <div class="modal-dialog">
+             <div class="modal-content">
+                 <div class="modal-header">
+                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                     <h4 class="modal-title" id="myModalLabel">注册</h4>
+                 </div>
+                 <div class="modal-body">
+                     <form class="form-horizontal form-center" role="form">
+                         <div class="form-group">
+                             <div class="col-sm-6">
+                                 <input type="text" class="form-control" placeholder="请输入用户名">
+                             </div>
+                         </div>
+                         <div class="form-group">
+                             <div class="col-sm-6">
+                                 <input type="text" class="form-control" placeholder="昵称">
+                             </div>
+                         </div>
+                         <div class="form-group">
+                             <div class="col-sm-6">
+                                 <input type="text" class="form-control" placeholder="请输入密码">
+                             </div>
+                         </div>
+                         <div class="form-group">
+                             <div class="col-sm-6">
+                                 <input type="text" class="form-control" placeholder="再次输入密码">
+                             </div>
+                         </div>
+                         <div class="form-group">
+                             <div class="col-sm-offset-0 col-sm-3">
+                                 <button type="submit" class="btn btn-default">提交</button>
+                             </div>
+                         </div>
+                     </form>
+                 </div>
+             </div><!-- /.modal-content -->
+         </div><!-- /.modal -->
+     </div>
+     <div class="loginform">
+         <form class="form-horizontal form-center" role="form">
+             <h4>Y-Blog 登录</h4>
+             <div class="form-group">
+                 <div class="col-sm-12">
+                     <input type="text" class="form-control" id="firstname" placeholder="请输入用户名">
+                 </div>
+             </div>
+             <div class="form-group">
+                 <div class="col-sm-12">
+                     <input type="text" class="form-control" id="lastname" placeholder="请输入密码">
+                 </div>
+             </div>
+             <div class="form-group">
+                 <div class="col-sm-offset-0 col-sm-3">
+                     <button type="submit" class="btn btn-default">登录</button>
+                 </div>
+                 <div class="col-sm-9">
+                     <a class="margin_center" href="#" target="_blank">忘记密码</a>
+                 </div>
+             </div>
+         </form>
+     </div>
  </div>
 </body>
 </html>
