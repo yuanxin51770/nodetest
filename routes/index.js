@@ -21,7 +21,11 @@ router.get('/loginout', function(req, res, next) {
     loginobj.Loginout(req, res);
 });
 // 微博发送
-router.get('/blogsend', function(req, res, next) {
+router.post('/blogsend', function(req, res, next) {
     blogobj.send(req, res);
+});
+// 微博获取
+router.get('/blogget', function(req, res, next) {
+    blogobj.get(req, res);
 });
 module.exports = router;

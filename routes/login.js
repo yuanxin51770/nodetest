@@ -5,11 +5,10 @@ var User = require('./users');
 var LoginObj = function(){
     // 登录
     this.LoginIn = function(req, res, callback){
-        var password = req.body['password'];
         var username = req.body['username'];
         // md5加密
         var md5 = crypto.createHash('md5');
-        password = md5.update(req.body.password).digest('base64');
+        var password = md5.update(req.body.password).digest('base64');
         var userobj = {
             name: username,
             password:password
@@ -38,6 +37,7 @@ var LoginObj = function(){
         var password = req.body['password'];
         var r_password = req.body['r_password'];
         var username = req.body['username'];
+        var nickname = req.body['nickname'];
         // 密码不一致
         if(password != r_password){
             obj = _utils.setReturnobj(false, '300','密码不一致！');
@@ -50,7 +50,8 @@ var LoginObj = function(){
             var password = md5.update(req.body.password).digest('base64');
             var newUser = new User({
                 username:username,
-                password:password
+                password:password,
+                nickname:nickname
             });
             var userobj = {
                 name:username

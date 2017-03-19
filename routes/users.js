@@ -3,6 +3,7 @@ var mongodb = require('./db');
 var Users = function(user){
     this.name = user.username;
     this.password = user.password;
+    this.nickname = user.nickname;
 }
 
 module.exports = Users;
@@ -30,7 +31,8 @@ Users.get = function(userobj, callback){
 Users.prototype.save = function(callback){
     var users = {
         name : this.name,
-        password : this.password
+        password : this.password,
+        nickname : this.nickname
     };
     // 数据库连接方法
     _utils.dbcollect('users',function(collection){
@@ -39,4 +41,4 @@ Users.prototype.save = function(callback){
             callback(err, doc);
         });
     });
-}
+};

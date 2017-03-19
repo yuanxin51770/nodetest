@@ -31,4 +31,4 @@ utils.dbcollect = function(tablename, callback){
             callback(collection);
         });
     });
-}
+};
