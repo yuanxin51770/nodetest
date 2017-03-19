@@ -7,6 +7,145 @@ body{
     top:-1px;
     margin-left: 5px;
 }
-.language{
+.margin_center{
     margin-top:8px;
+    display: block;
+}
+/*登录窗口*/
+.loginform{
+    width:300px;
+    position: absolute;
+    left:50%;
+    top:20%;
+    margin-left:-150px;
+}
+.form-center{
+    margin: 0 auto;
+}
+.searchicon{
+    float: right;
+    left: -10px;
+    margin-top:-24px;
+}
+.edit{
+    height: 100%;
+    width:50px;
+    float: left;
+}
+.edit .glyphicon{
+    margin-top:15px;
+}
+.headimg{
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+}
+.main{
+    margin-top: 20px;
+}
+.main .left_panel{
+    padding-top: 10px;
+    border: 1px solid #00B7FF;
+}
+.main .left_panel .blockdiv{
+    width: 100%;
+}
+.main .left_panel .block1{
+    height: 200px;
+    text-align: center;
+}
+.main .left_panel .block1 .personal_div{
+    margin: 0 auto;
+}
+.spandiv{
+    height: 20px;
+}
+.personimg{
+    width:80px;
+    height: 80px;
+}
+.main .left_panel .block2{
+    height: 50px;
+    border-top: 1px solid #00B7FF;
+}
+.main .left_panel .block2 .icondiv{
+    background: #888888;
+    text-align: center;
+    padding-top: 5px;
+    width: 25%;
+    height: 100%;
+    float: left;
+ }
+.main .left_panel .block3{
+    height: 80px;
+    padding: 3px;
+    border-top: 1px solid #00B7FF;
+}
+.main .left_panel .block4{
+    height: 50px;
+    border-top: 1px solid #00B7FF;
+}
+.main .left_panel .block4 .messagediv{
+    background: #888888;
+    text-align: center;
+    padding-top: 15px;
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.main .left_panel .block4  .borderdiv{
+    border-right: 1px solid #00B7FF;
+}
+.main .left_panel .block5{
+    height: 70px;
+    text-align: center;
+    border-top: 1px solid #00B7FF;
+}
+.main .main_panel{
+    height: 600px;
+}
+.chatpanel{
+    border: 1px solid #00B7FF;
+    padding: 0 5px;
+}
+.chatpanel .photodiv{
+    width: 60px;
+    text-align: right;
+    padding-top: 8px;
+    float: left;
+}
+.chatpanel .chatdiv{
+    width: auto;
+    margin-left: 70px;
+}
+.chatpanel .chatdiv .noneborder{
+    border:0;
+    overflow:hidden;
+    resize:none;
+    outline: none;
+}
+.blogmain{
+    border-top: 1px solid #00B7FF;
+    border-left: 1px solid #00B7FF;
+    border-right: 1px solid #00B7FF;
+    margin-top: 10px;
+}
+.blogmain .personblogdiv{
+    border-bottom: 1px solid #00B7FF;
+    height: auto;
+    position: relative;
+    padding-bottom: 10px;
+}
+.perimg{
+    width:40px;
+    height: 40px;
+    float: right;
+}
+.main_photodiv{
+    width: 60px;
+    float: left;
+}
+.mian_chatdiv{
+    margin-left: 60px;
+    padding-left: 10px;
 }
